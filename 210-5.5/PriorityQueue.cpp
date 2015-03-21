@@ -7,3 +7,14 @@
 //
 
 #include "PriorityQueue.h"
+
+
+PriorityQueue::PriorityQueue(Object* h, int num, int max) : maxHeap(heap<Object, ObjectCompare>(h, num, max)){}
+
+void PriorityQueue::enqueue(Object obj){
+	maxHeap.insert(obj);
+}
+
+Object PriorityQueue::dequeue() {
+	return maxHeap.removefirst();
+}

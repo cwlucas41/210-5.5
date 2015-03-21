@@ -15,11 +15,12 @@
 #include "heap.h"
 
 class PriorityQueue {
-	heap<int, ObjectCompare> maxHeap;
+	heap<Object, ObjectCompare> maxHeap;
 	
 public:
+	PriorityQueue(Object* h, int num, int max);
 	void enqueue(Object);
-	int dequeue();
+	Object dequeue();
 	void changeWeight(int ObjectID, int newPriority);
 };
 
