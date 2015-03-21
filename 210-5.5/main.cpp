@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "PriorityQueue.cpp"
+using namespace std;
+
 
 
 int main(int argc, const char * argv[]) {
-	//test
+	Object h[1] = {Object(3, 3)};
+	PriorityQueue myPQ = PriorityQueue(h, 1, 1);
+	cout << myPQ.dequeue().getID() << endl;
+	
     return 0;
 }
