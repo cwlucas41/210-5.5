@@ -15,13 +15,11 @@ using namespace std;
 int main(int argc, const char * argv[]) {
 	Object* h = new Object [5];
 	PriorityQueue myPQ = PriorityQueue(h, 0, 5);
-	delete[] h;
 	myPQ.enqueue(Object(2, 2));
-	cout << myPQ.dequeue().getID() << endl;
 	myPQ.enqueue(Object(4,4));
-	cout << myPQ.dequeue().getID() <<
- endl;
-
-	
+	myPQ.changeWeight(2, 5);
+	cout << myPQ.dequeue().getID() << endl;
+	cout << myPQ.dequeue().getID() << endl;
+	delete [] h;
     return 0;
 }

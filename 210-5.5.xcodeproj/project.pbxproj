@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A90297691ABD403600B50CD7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621661ABCFE25005962DC /* main.cpp */; };
 		A902976B1ABD405000B50CD7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621701ABCFEA3005962DC /* Object.cpp */; };
+		A9CE6F1A1ABE0865006CF545 /* Comparator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CE6F191ABE0865006CF545 /* Comparator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		A9C621701ABCFEA3005962DC /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		A9C621711ABCFEA3005962DC /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		A9C621791ABD0307005962DC /* Comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comparator.h; sourceTree = "<group>"; };
+		A9CE6F191ABE0865006CF545 /* Comparator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Comparator.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A9C6216D1ABCFEA3005962DC /* book.h */,
 				A9C6216F1ABCFEA3005962DC /* heap.h */,
 				A9C621791ABD0307005962DC /* Comparator.h */,
+				A9CE6F191ABE0865006CF545 /* Comparator.cpp */,
 				A9C621711ABCFEA3005962DC /* Object.h */,
 				A9C621701ABCFEA3005962DC /* Object.cpp */,
 				A953770D1ABD458F00BC4037 /* PriorityQueue.h */,
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A902976B1ABD405000B50CD7 /* Object.cpp in Sources */,
+				A9CE6F1A1ABE0865006CF545 /* Comparator.cpp in Sources */,
 				A90297691ABD403600B50CD7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

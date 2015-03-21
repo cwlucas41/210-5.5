@@ -14,8 +14,7 @@
 
 class ObjectCompare {
 public:
-	static bool prior(Object a, Object b){
-		return (a.getPriority() > b.getPriority());
-	}
+	static bool prior(Object a, Object b);
+	static bool checkID(Object a, Object b);
 };
 #endif /* defined(___10_5_5__Comparator__) */

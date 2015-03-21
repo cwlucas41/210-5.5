@@ -19,3 +19,12 @@ void PriorityQueue::enqueue(Object obj){
 Object PriorityQueue::dequeue() {
 	return maxHeap.removefirst();
 }
+
+void PriorityQueue::changeWeight(int ObjectID, int newPriority){
+	int pos = maxHeap.findPos(Object(ObjectID, 0));
+	Assert(pos >= 0, "An object with that ID does not exist in the queue");
+	maxHeap.remove(pos);
+	Object reprioritized = Object(ObjectID, newPriority);
+	maxHeap.insert(reprioritized);
+	
+}

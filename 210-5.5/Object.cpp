@@ -23,7 +23,3 @@ int Object::getPriority() const{
 	return priority;
 }
 
-void Object::setPriority(int p){
-	priority = p;
-}
-

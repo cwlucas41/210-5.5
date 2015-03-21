@@ -21,7 +21,6 @@ public:
 	Object(int ID, int priority);
 	int getID() const;
 	int getPriority() const;
-	void setPriority(int);
 };
 
 #endif /* defined(__project_5_5__object__) */
