@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "PriorityQueue.cpp"
+#include "PriorityQueue.h"
 using namespace std;
 
 

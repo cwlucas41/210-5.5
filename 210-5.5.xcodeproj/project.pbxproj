@@ -10,6 +10,7 @@
 		A90297691ABD403600B50CD7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621661ABCFE25005962DC /* main.cpp */; };
 		A902976B1ABD405000B50CD7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621701ABCFEA3005962DC /* Object.cpp */; };
 		A9CE6F1A1ABE0865006CF545 /* Comparator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CE6F191ABE0865006CF545 /* Comparator.cpp */; };
+		A9FB02641ABE1A1500165FC4 /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A953770C1ABD458F00BC4037 /* PriorityQueue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -136,9 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90297691ABD403600B50CD7 /* main.cpp in Sources */,
 				A902976B1ABD405000B50CD7 /* Object.cpp in Sources */,
 				A9CE6F1A1ABE0865006CF545 /* Comparator.cpp in Sources */,
-				A90297691ABD403600B50CD7 /* main.cpp in Sources */,
+				A9FB02641ABE1A1500165FC4 /* PriorityQueue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
