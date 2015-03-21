@@ -13,9 +13,15 @@ using namespace std;
 
 
 int main(int argc, const char * argv[]) {
-	Object h[1] = {Object(3, 3)};
-	PriorityQueue myPQ = PriorityQueue(h, 1, 1);
+	Object* h = new Object [5];
+	PriorityQueue myPQ = PriorityQueue(h, 0, 5);
+	delete[] h;
+	myPQ.enqueue(Object(2, 2));
 	cout << myPQ.dequeue().getID() << endl;
+	myPQ.enqueue(Object(4,4));
+	cout << myPQ.dequeue().getID() <<
+ endl;
+
 	
     return 0;
 }

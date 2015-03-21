@@ -19,6 +19,7 @@ private:
 	heap<Object, ObjectCompare> maxHeap;
 	
 public:
+//	PriorityQueue(int max);
 	PriorityQueue(Object* h, int num, int max);
 	void enqueue(Object);
 	Object dequeue();

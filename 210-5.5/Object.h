@@ -17,6 +17,7 @@ private:
 	int priority;
 	
 public:
+	Object();
 	Object(int ID, int priority);
 	int getID() const;
 	int getPriority() const;

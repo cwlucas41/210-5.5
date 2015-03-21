@@ -13,6 +13,8 @@ Object::Object(int Id, int p){
 	priority = p;
 }
 
+Object::Object() : objectID(0) , priority(0) {}
+
 int Object::getID() const{
 	return objectID;
 }

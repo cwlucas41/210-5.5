@@ -8,6 +8,8 @@
 
 #include "PriorityQueue.h"
 
+//PriorityQueue::PriorityQueue(int max) : maxHeap(heap<Object, ObjectCompare>(new Object [max], 0, max)){}
+
 PriorityQueue::PriorityQueue(Object* h, int num, int max) : maxHeap(heap<Object, ObjectCompare>(h, num, max)){}
 
 void PriorityQueue::enqueue(Object obj){
