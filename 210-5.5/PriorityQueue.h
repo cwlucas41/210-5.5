@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 CWL. All rights reserved.
 //
 
-#ifndef __project_5_5__priorityQueue__
-#define __project_5_5__priorityQueue__
+#ifndef __project_5_5__PriorityQueue__
+#define __project_5_5__PriorityQueue__
 
 #include <stdio.h>
+#include "Object.h"
+#include "Comparator.h"
 #include "heap.h"
-#include "object.h"
-#include "compare.h"
 
 class PriorityQueue {
 	heap<int, ObjectCompare> maxHeap;
@@ -20,7 +20,7 @@ class PriorityQueue {
 public:
 	void enqueue(Object);
 	int dequeue();
-	void changeWeight(int Object ID, int newPriority);
+	void changeWeight(int ObjectID, int newPriority);
 };
 
 #endif /* defined(__project_5_5__priorityQueue__) */

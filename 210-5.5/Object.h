@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 CWL. All rights reserved.
 //
 
-#ifndef __project_5_5__object__
-#define __project_5_5__object__
+#ifndef __project_5_5__Object__
+#define __project_5_5__Object__
 
 #include <stdio.h>
 

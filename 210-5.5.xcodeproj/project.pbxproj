@@ -28,12 +28,12 @@
 		A9C621631ABCFE25005962DC /* 210-5.5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "210-5.5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C621661ABCFE25005962DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A9C6216D1ABCFEA3005962DC /* book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = book.h; sourceTree = "<group>"; };
-		A9C6216E1ABCFEA3005962DC /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
 		A9C6216F1ABCFEA3005962DC /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
 		A9C621701ABCFEA3005962DC /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		A9C621711ABCFEA3005962DC /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		A9C621721ABCFEA3005962DC /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
 		A9C621731ABCFEA3005962DC /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
+		A9C621791ABD0307005962DC /* Comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comparator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +68,12 @@
 			children = (
 				A9C621661ABCFE25005962DC /* main.cpp */,
 				A9C6216D1ABCFEA3005962DC /* book.h */,
-				A9C6216E1ABCFEA3005962DC /* compare.h */,
 				A9C6216F1ABCFEA3005962DC /* heap.h */,
-				A9C621701ABCFEA3005962DC /* Object.cpp */,
+				A9C621791ABD0307005962DC /* Comparator.h */,
 				A9C621711ABCFEA3005962DC /* Object.h */,
-				A9C621721ABCFEA3005962DC /* PriorityQueue.cpp */,
+				A9C621701ABCFEA3005962DC /* Object.cpp */,
 				A9C621731ABCFEA3005962DC /* PriorityQueue.h */,
+				A9C621721ABCFEA3005962DC /* PriorityQueue.cpp */,
 			);
 			path = "210-5.5";
 			sourceTree = "<group>";

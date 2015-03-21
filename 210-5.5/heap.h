@@ -5,6 +5,9 @@
 
 // Heap class
 
+#ifndef __project_5_5__heap__
+#define __project_5_5__heap__
+
 #include "book.h"
 
 template <typename E, typename Comp> class heap {
@@ -79,3 +82,5 @@ public:
     return Heap[n];
   }
 };
+
+#endif
