@@ -8,8 +8,6 @@
 
 #include "PriorityQueue.h"
 
-//PriorityQueue::PriorityQueue(int max) : maxHeap(heap<Object, ObjectCompare>(new Object [max], 0, max)){}
-
 PriorityQueue::PriorityQueue(Object* h, int num, int max) : maxHeap(heap<Object, ObjectCompare>(h, num, max)){}
 
 void PriorityQueue::enqueue(Object obj){
@@ -21,10 +19,17 @@ Object PriorityQueue::dequeue() {
 }
 
 void PriorityQueue::changeWeight(int ObjectID, int newPriority){
-	int pos = maxHeap.findPos(Object(ObjectID, 0));
-	Assert(pos >= 0, "An object with that ID does not exist in the queue");
-	maxHeap.remove(pos);
-	Object reprioritized = Object(ObjectID, newPriority);
-	maxHeap.insert(reprioritized);
-	
+	Object* listOfAllObjects = new Object[maxHeap.size()];
+	int size = maxHeap.size();
+	for (int i = 0; i < size; i++) {
+		Object obj = maxHeap.removefirst();
+		if (obj.getID() == ObjectID) {
+			obj = Object(ObjectID, newPriority);
+		}
+		listOfAllObjects[i] = obj;
+	}
+	for (int i = 0; i < size; i++) {
+		maxHeap.insert(listOfAllObjects[i]);
+	}
+	delete [] listOfAllObjects;
 }

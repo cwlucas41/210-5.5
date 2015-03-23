@@ -81,14 +81,6 @@ public:
     }
     return Heap[n];
   }
-	int findPos(E thing) const{
-		for (int i = 0; i<n; i++) {
-			if (Comp::checkID(Heap[i],thing)) {
-				return i;
-			}
-		}
-		return -1;
-	}
 };
 
 #endif

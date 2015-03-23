@@ -19,10 +19,15 @@ private:
 	heap<Object, ObjectCompare> maxHeap;
 	
 public:
-//	PriorityQueue(int max);
 	PriorityQueue(Object* h, int num, int max);
+	
+	//enqueues a new object
 	void enqueue(Object);
+	
+	//removes and returns the object with highest priority
 	Object dequeue();
+	
+	//changes the weight of all Objects with specified ObjectID to the newPriority wieght
 	void changeWeight(int ObjectID, int newPriority);
 };
 
