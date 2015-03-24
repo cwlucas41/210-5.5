@@ -10,7 +10,4 @@
  bool ObjectCompare::prior(Object a, Object b) {
 	return (a.getPriority() > b.getPriority());
 }
-
-bool ObjectCompare::checkID(Object a, Object b){
-	return a.getID() == b.getID();
 }
