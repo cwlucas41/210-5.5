@@ -5,25 +5,39 @@
 //  Created by Christopher Lucas on 3/20/15.
 //  Copyright (c) 2015 CWL. All rights reserved.
 //
+#ifndef __Object__
+#define __Object__
 
 #include "Object.h"
 
-Object::Object(int Id, int p){
+template<typename I, typename P>
+Object<I,P>::Object(I Id, P p){
 	objectID = Id;
 	priority = p;
 }
 
-Object::Object() : objectID(0) , priority(0) {}
+template<typename I, typename P>
+Object<I,P>::Object() : objectID(0) , priority(0) {}
 
-int Object::getID() const{
+template<typename I, typename P>
+I Object<I,P>::getID() const{
 	return objectID;
 }
 
-int Object::getPriority() const{
+template<typename I, typename P>
+P Object<I,P>::getPriority() const{
 	return priority;
 }
 
-bool Object::operator==(Object other){
+template<typename I, typename P>
+bool Object<I,P>::operator==(Object other){
 	return getID()==other.getID();
 }
 
+template<typename I, typename P>
+std::ostream& operator<<(std::ostream& out, Object<I, P> obj){
+	out << "objectID is: " << obj.getID();
+	return out;
+}
+
+#endif

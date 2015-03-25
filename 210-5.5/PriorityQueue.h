@@ -14,23 +14,23 @@
 #include "Object.h"
 #include "heap.h"
 
-template<typename E, typename Comp>
+template<typename idType, typename priorityType, typename Comp>
 class PriorityQueue {
 private:
-	heap<Object, ObjectCompare> maxHeap;
+	heap<Object<idType,priorityType>, Comp> maxHeap;
 	
 public:
-	PriorityQueue(E* h, int num, int max);
+	PriorityQueue(Object<idType,priorityType>* h, int num, int max);
 	
 	//enqueues a new object
-	void enqueue(E);
+	void enqueue(Object<idType, priorityType>);
 	
 	//removes and returns the object with highest priority
-	Object dequeue();
+	Object<idType, priorityType> dequeue();
 	
 	//parameter: instance of Object class
 	//changes the weight of all Objects with the same ID as the paramater object to the weight of the paramater object
-	void changeWeight(E object);
+	void changeWeight(idType,priorityType);
 };
 
 

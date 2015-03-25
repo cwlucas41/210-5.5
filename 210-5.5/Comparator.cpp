@@ -7,7 +7,8 @@
 //
 
 #include "Comparator.h"
- bool ObjectCompare::prior(Object a, Object b) {
+
+bool ObjectIntCompare::prior(Object<int, int> a, Object<int, int> b) {
 	return (a.getPriority() > b.getPriority());
 }
 

@@ -10,10 +10,11 @@
 #define ___10_5_5__Comparator__
 
 #include <stdio.h>
-#include "Object.h"
+#include "Object.cpp"
 
-class ObjectCompare {
+
+class ObjectIntCompare {
 public:
-	static bool prior(Object a, Object b);
+	static bool prior(Object<int, int> a, Object<int, int> b);
 };
 #endif /* defined(___10_5_5__Comparator__) */

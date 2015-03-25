@@ -9,20 +9,25 @@
 #ifndef __project_5_5__Object__
 #define __project_5_5__Object__
 
-#include <stdio.h>
+#include <iostream>
 
+template<typename I, typename P>
 class Object {
 private:
-	int objectID;
-	int priority;
+	I objectID;
+	P priority;
 	
 public:
 	Object();
-	Object(int ID, int priority);
-	int getID() const;
-	int getPriority() const;
+	Object(I ID, P priority);
+	I getID() const;
+	P getPriority() const;
 	
 	bool operator==(Object);
+	
 };
+
+template<typename I, typename P>
+std::ostream& operator<<(std::ostream&, Object<I, P>);
 
 #endif /* defined(__project_5_5__object__) */
