@@ -7,7 +7,8 @@
 //
 
 #include <iostream>
-#include "PriorityQueue.h"
+#include "PriorityQueue.cpp"
+#include "Comparator.h"
 using namespace std;
 
 
@@ -15,11 +16,11 @@ using namespace std;
 int main(int argc, const char * argv[]) {
 	Object* h = new Object [5];
 	
-	PriorityQueue myPQ = PriorityQueue(h,0,5);
+	PriorityQueue<Object,ObjectCompare> myPQ = PriorityQueue<Object,ObjectCompare>(h,0,5);
 	myPQ.enqueue(Object(1, 2));
 	myPQ.enqueue(Object(2, 4));
 	myPQ.enqueue(Object(3, 5));
-	myPQ.changeWeight(1, 6);
+	myPQ.changeWeight(Object(1, 6));
 	for (int i = 0; i < 3; i++) {
 		cout << myPQ.dequeue().getID() << endl;
 	}

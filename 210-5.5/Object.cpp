@@ -23,3 +23,7 @@ int Object::getPriority() const{
 	return priority;
 }
 
+bool Object::operator==(Object other){
+	return getID()==other.getID();
+}
+

@@ -21,6 +21,8 @@ public:
 	Object(int ID, int priority);
 	int getID() const;
 	int getPriority() const;
+	
+	bool operator==(Object);
 };
 
 #endif /* defined(__project_5_5__object__) */
