@@ -17,7 +17,7 @@ Object<I,P>::Object(I Id, P p){
 }
 
 template<typename I, typename P>
-Object<I,P>::Object() : objectID(0) , priority(0) {}
+Object<I,P>::Object() : objectID() , priority() {}
 
 template<typename I, typename P>
 I Object<I,P>::getID() const{

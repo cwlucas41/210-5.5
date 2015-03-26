@@ -8,7 +8,8 @@
 
 #include "Comparator.h"
 
-bool ObjectIntCompare::prior(Object<int, int> a, Object<int, int> b) {
+template<typename idType, typename priorityType>
+bool ObjectMaxCompare<idType,priorityType>::prior(Object<idType, priorityType> a, Object<idType, priorityType> b) {
 	return (a.getPriority() > b.getPriority());
 }
 

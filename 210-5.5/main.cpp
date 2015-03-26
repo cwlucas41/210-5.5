@@ -8,25 +8,27 @@
 
 #include <iostream>
 #include "PriorityQueue.cpp"
-#include "Comparator.h"
+#include "Comparator.cpp"
 #include "Object.cpp"
-
 using namespace std;
 
-
-
 int main(int argc, const char * argv[]) {
-	Object<int,int>* h = new Object<int,int> [5];
 	
-	PriorityQueue<int,int,ObjectIntCompare> myPQ = PriorityQueue<int,int,ObjectIntCompare>(h,0,5);
+	typedef Object<int,int> intPair;
+	typedef PriorityQueue<int, int, ObjectMaxCompare<int, int>> intPairPriorityQueue;
 	
-	myPQ.enqueue(Object<int,int>(1, 4));
-	myPQ.enqueue(Object<int,int>(2, 4));
-	myPQ.enqueue(Object<int,int>(3, 5));
+	intPair* h = new intPair[5];
 	
-	myPQ.changeWeight(1,6);
+	intPairPriorityQueue myPQ = intPairPriorityQueue(h,0,5);
 	
-	for (int i = 0; i < 3; i++) {
+	myPQ.enqueue(intPair(0,-7));
+	myPQ.enqueue(intPair(6, 0));
+	myPQ.enqueue(intPair(4, 4));
+	myPQ.enqueue(intPair(3, 3));
+	
+	myPQ.changeWeight(9,999);
+	
+	for (int i = 0; i < 4; i++) {
 		cout << myPQ.dequeue() << endl;
 	}
 	

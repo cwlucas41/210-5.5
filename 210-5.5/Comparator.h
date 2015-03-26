@@ -11,10 +11,12 @@
 
 #include <stdio.h>
 #include "Object.cpp"
+using namespace std;
 
-
-class ObjectIntCompare {
+template<typename idType, typename priorityType>
+class ObjectMaxCompare {
 public:
-	static bool prior(Object<int, int> a, Object<int, int> b);
+	// templated argument is the objectID type, not
+	static bool prior(Object<idType, priorityType> a, Object<idType, priorityType> b);
 };
 #endif /* defined(___10_5_5__Comparator__) */

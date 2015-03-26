@@ -28,12 +28,18 @@ void PriorityQueue<idType,priorityType,Comp>::changeWeight(idType ident, priorit
 	Object<idType, priorityType>* listOfAllObjects = new Object<idType, priorityType>[maxHeap.size()];
 	
 	int size = maxHeap.size();
+	bool changedAny = 0;
 	for (int i = 0; i < size; i++) {
 		Object<idType, priorityType> obj = maxHeap.removefirst();
 		if (obj.getID()==ident) {
 			obj = Object<idType, priorityType>(ident, priority);
+			changedAny = 1;
 		}
 		listOfAllObjects[i] = obj;
+	}
+	
+	if (!changedAny) {
+		cout << "No objects matched the specified ID, continuing" <<  endl;
 	}
 	
 	for (int i = 0; i < size; i++) {
