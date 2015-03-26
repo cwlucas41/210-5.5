@@ -31,6 +31,8 @@ public:
 	//parameter: instance of Object class
 	//changes the weight of all Objects with the same ID as the paramater object to the weight of the paramater object
 	void changeWeight(idType,priorityType);
+	
+	int size();
 };
 
 

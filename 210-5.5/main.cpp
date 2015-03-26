@@ -14,8 +14,11 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 	
-	typedef Object<int,int> intPair;
-	typedef PriorityQueue<int, int, ObjectMaxCompare<int, int>> intPairPriorityQueue;
+	typedef int objectIDType;
+	typedef int priorityType;
+	 
+	typedef Object<objectIDType,priorityType> intPair;
+	typedef PriorityQueue<objectIDType, priorityType, ObjectMaxCompare<objectIDType, priorityType>> intPairPriorityQueue;
 	
 	intPair* h = new intPair[5];
 	
@@ -26,9 +29,10 @@ int main(int argc, const char * argv[]) {
 	myPQ.enqueue(intPair(4, 4));
 	myPQ.enqueue(intPair(3, 3));
 	
-	myPQ.changeWeight(9,999);
+	myPQ.changeWeight(1,999);
 	
-	for (int i = 0; i < 4; i++) {
+	int size = myPQ.size();
+	for (int i = 0; i < size; i++) {
 		cout << myPQ.dequeue() << endl;
 	}
 	

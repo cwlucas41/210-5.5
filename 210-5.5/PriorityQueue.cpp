@@ -48,3 +48,8 @@ void PriorityQueue<idType,priorityType,Comp>::changeWeight(idType ident, priorit
 	
 	delete [] listOfAllObjects;
 }
+
+template<typename idType, typename priorityType, typename Comp>
+int PriorityQueue<idType, priorityType, Comp>::size(){
+	return maxHeap.size();
+}
