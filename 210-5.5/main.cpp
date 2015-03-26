@@ -17,17 +17,17 @@ int main(int argc, const char * argv[]) {
 	typedef int objectIDType;
 	typedef int priorityType;
 	 
-	typedef Object<objectIDType,priorityType> intPair;
-	typedef PriorityQueue<objectIDType, priorityType, ObjectMaxCompare<objectIDType, priorityType>> intPairPriorityQueue;
+	typedef Object<objectIDType,priorityType> PairObject;
+	typedef PriorityQueue<objectIDType, priorityType, ObjectMaxCompare<objectIDType, priorityType>> PairObjectPriorityQueue;
 	
-	intPair* h = new intPair[5];
+	PairObject* priorityQueueList = new PairObject[5];
 	
-	intPairPriorityQueue myPQ = intPairPriorityQueue(h,0,5);
+	PairObjectPriorityQueue myPQ = PairObjectPriorityQueue(priorityQueueList,0,5);
 	
-	myPQ.enqueue(intPair(0,-7));
-	myPQ.enqueue(intPair(6, 0));
-	myPQ.enqueue(intPair(4, 4));
-	myPQ.enqueue(intPair(3, 3));
+	myPQ.enqueue(PairObject(0,-7));
+	myPQ.enqueue(PairObject(6, 0));
+	myPQ.enqueue(PairObject(4, 4));
+	myPQ.enqueue(PairObject(3, 3));
 	
 	myPQ.changeWeight(1,999);
 	
@@ -36,6 +36,6 @@ int main(int argc, const char * argv[]) {
 		cout << myPQ.dequeue() << endl;
 	}
 	
-	delete [] h;
+	delete [] priorityQueueList;
     return 0;
 }
