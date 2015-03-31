@@ -7,20 +7,13 @@
 //
 
 #include <iostream>
-#include "PriorityQueue.cpp"
-#include "Comparator.cpp"
-#include "Object.cpp"
+#include "PriorityQueue__IntIntMax.h"
+#include "Object_IntInt.h"
 using namespace std;
 
-template<typename I, typename P>
-void quickCheck (Object<I, P> obj) {
+void quickCheck (Object__IntInt obj) {
 
-	typedef int objectIDType;
-	typedef int priorityType;
-
-	typedef Object<objectIDType,priorityType> PairObject;
-
-	if (obj == PairObject(5,1) || obj == PairObject(3,1) || obj == PairObject(0,1) || obj == PairObject(-3,1) || obj == PairObject(-5,1)) {
+	if (obj == Object__IntInt(5,1) || obj == Object__IntInt(3,1) || obj == Object__IntInt(0,1) || obj == Object__IntInt(-3,1) || obj == Object__IntInt(-5,1)) {
 //		cout << "All Good" << endl;
 	} else {
 		cout << "Incorrect Value found" << endl;
@@ -29,21 +22,15 @@ void quickCheck (Object<I, P> obj) {
 
 int main(int argc, const char * argv[]) {
 	
-	typedef int objectIDType;
-	typedef int priorityType;
-	 
-	typedef Object<objectIDType,priorityType> PairObject;
-	typedef PriorityQueue<objectIDType, priorityType, ObjectMaxCompare<objectIDType, priorityType> > PairObjectPriorityQueue;
+	Object__IntInt* priorityQueueList = new Object__IntInt[5];
 	
-	PairObject* priorityQueueList = new PairObject[5];
+	PriorityQueue__IntIntMax myPQ = PriorityQueue__IntIntMax(priorityQueueList,0,5);
 	
-	PairObjectPriorityQueue myPQ = PairObjectPriorityQueue(priorityQueueList,0,5);
-	
-	myPQ.enqueue(PairObject(-5,-10));
-	myPQ.enqueue(PairObject(-3, -7));
-	myPQ.enqueue(PairObject(0, 3));
-	myPQ.enqueue(PairObject(3, 8));
-	myPQ.enqueue(PairObject(5, -32));
+	myPQ.enqueue(Object__IntInt(-5,-10));
+	myPQ.enqueue(Object__IntInt(-3, -7));
+	myPQ.enqueue(Object__IntInt(0, 3));
+	myPQ.enqueue(Object__IntInt(3, 8));
+	myPQ.enqueue(Object__IntInt(5, -32));
 	
 	myPQ.changeWeight(5,999);
 	
