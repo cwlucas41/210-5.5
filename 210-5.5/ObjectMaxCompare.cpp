@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 CWL. All rights reserved.
 //
 
-#include "Comparator.h"
+#include "ObjectMaxCompare.h"
 
 template<typename Object>
 bool ObjectMaxCompare<Object>::prior(Object a, Object b) {

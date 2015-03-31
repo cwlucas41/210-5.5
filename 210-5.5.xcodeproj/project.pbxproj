@@ -11,7 +11,7 @@
 		A902976B1ABD405000B50CD7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621701ABCFEA3005962DC /* Object.cpp */; };
 		A96E10351ACA99B000EC9407 /* Object_IntInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96E10331ACA99B000EC9407 /* Object_IntInt.cpp */; };
 		A96E10381ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96E10361ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp */; };
-		A9CE6F1A1ABE0865006CF545 /* Comparator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CE6F191ABE0865006CF545 /* Comparator.cpp */; };
+		A9CE6F1A1ABE0865006CF545 /* ObjectMaxCompare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CE6F191ABE0865006CF545 /* ObjectMaxCompare.cpp */; };
 		A9FB02641ABE1A1500165FC4 /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A953770C1ABD458F00BC4037 /* PriorityQueue.cpp */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +40,8 @@
 		A9C6216F1ABCFEA3005962DC /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
 		A9C621701ABCFEA3005962DC /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		A9C621711ABCFEA3005962DC /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
-		A9C621791ABD0307005962DC /* Comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comparator.h; sourceTree = "<group>"; };
-		A9CE6F191ABE0865006CF545 /* Comparator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Comparator.cpp; sourceTree = "<group>"; };
+		A9C621791ABD0307005962DC /* ObjectMaxCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMaxCompare.h; sourceTree = "<group>"; };
+		A9CE6F191ABE0865006CF545 /* ObjectMaxCompare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMaxCompare.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 				A9C621661ABCFE25005962DC /* main.cpp */,
 				A9C6216D1ABCFEA3005962DC /* book.h */,
 				A9C6216F1ABCFEA3005962DC /* heap.h */,
-				A9C621791ABD0307005962DC /* Comparator.h */,
-				A9CE6F191ABE0865006CF545 /* Comparator.cpp */,
+				A9C621791ABD0307005962DC /* ObjectMaxCompare.h */,
+				A9CE6F191ABE0865006CF545 /* ObjectMaxCompare.cpp */,
 				A96E103A1ACAA5C900EC9407 /* Object */,
 				A96E10391ACAA5B000EC9407 /* PriorityQueue */,
 			);
@@ -167,7 +167,7 @@
 				A96E10381ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp in Sources */,
 				A96E10351ACA99B000EC9407 /* Object_IntInt.cpp in Sources */,
 				A902976B1ABD405000B50CD7 /* Object.cpp in Sources */,
-				A9CE6F1A1ABE0865006CF545 /* Comparator.cpp in Sources */,
+				A9CE6F1A1ABE0865006CF545 /* ObjectMaxCompare.cpp in Sources */,
 				A9FB02641ABE1A1500165FC4 /* PriorityQueue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

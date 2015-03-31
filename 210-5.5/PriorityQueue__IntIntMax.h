@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "PriorityQueue.cpp"
 #include "Object_IntInt.h"
-#include "Comparator.cpp"
+#include "ObjectMaxCompare.cpp"
 
 class PriorityQueue__IntIntMax {
 private:

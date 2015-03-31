@@ -10,7 +10,7 @@
 #define ___10_5_5__PriorityQueue__
 
 #include <stdio.h>
-#include "Comparator.h"
+#include "ObjectMaxCompare.h"
 #include "Object.h"
 #include "heap.h"
 
