@@ -10,7 +10,7 @@
 #include "Object_IntInt.h"
 
 
-PriorityQueue__IntIntMax::PriorityQueue__IntIntMax(Object__IntInt* h, int num, int max) : pq(PriorityQueue<int, int, ObjectMaxCompare<int, int, Object__IntInt>, Object__IntInt>(h, num, max)){}
+PriorityQueue__IntIntMax::PriorityQueue__IntIntMax(Object__IntInt* h, int num, int max) : pq(PriorityQueue<int, int, ObjectMaxCompare<Object__IntInt>, Object__IntInt>(h, num, max)){}
 
 void PriorityQueue__IntIntMax::enqueue(Object__IntInt object){
 	pq.enqueue(object);

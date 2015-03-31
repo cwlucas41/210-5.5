@@ -13,7 +13,7 @@
 #include "Object.cpp"
 using namespace std;
 
-template<typename idType, typename priorityType, typename Object>
+template<typename Object>
 class ObjectMaxCompare {
 public:
 	// templated argument is the objectID type, not

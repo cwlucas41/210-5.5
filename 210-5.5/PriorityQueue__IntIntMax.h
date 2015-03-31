@@ -17,7 +17,7 @@
 class PriorityQueue__IntIntMax {
 private:
 	
-	PriorityQueue<int, int, ObjectMaxCompare<int, int, Object__IntInt>, Object__IntInt> pq;
+	PriorityQueue<int, int, ObjectMaxCompare<Object__IntInt>, Object__IntInt> pq;
 	
 public:
 	
