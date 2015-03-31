@@ -28,3 +28,8 @@ int Object__IntInt::getPriority() const{
 bool Object__IntInt::operator==(Object__IntInt other){
 	return object.getID() == other.getID();
 }
+
+std::ostream& operator<<(std::ostream& out, Object__IntInt obj){
+	out << "objectID is: " << obj.getID() << std::endl;
+	return out;
+}

@@ -29,4 +29,6 @@ public:
 	
 };
 
+std::ostream& operator<<(std::ostream&, Object__IntInt obj);
+
 #endif /* defined(___10_5_5__Object_IntInt__) */
