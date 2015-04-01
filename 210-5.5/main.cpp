@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include "PriorityQueue__IntIntMax.h"
-#include "Object_IntInt.h"
+#include "Object__IntInt.h"
 using namespace std;
 
 void quickCheck (Object__IntInt obj) {

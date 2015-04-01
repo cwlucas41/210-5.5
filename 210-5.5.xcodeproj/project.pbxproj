@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A90297691ABD403600B50CD7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621661ABCFE25005962DC /* main.cpp */; };
 		A902976B1ABD405000B50CD7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C621701ABCFEA3005962DC /* Object.cpp */; };
-		A96E10351ACA99B000EC9407 /* Object_IntInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96E10331ACA99B000EC9407 /* Object_IntInt.cpp */; };
+		A96E10351ACA99B000EC9407 /* Object__IntInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96E10331ACA99B000EC9407 /* Object__IntInt.cpp */; };
 		A96E10381ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96E10361ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp */; };
 		A9CE6F1A1ABE0865006CF545 /* ObjectMaxCompare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CE6F191ABE0865006CF545 /* ObjectMaxCompare.cpp */; };
 		A9FB02641ABE1A1500165FC4 /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A953770C1ABD458F00BC4037 /* PriorityQueue.cpp */; };
@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		A953770C1ABD458F00BC4037 /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
 		A953770D1ABD458F00BC4037 /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
-		A96E10331ACA99B000EC9407 /* Object_IntInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object_IntInt.cpp; sourceTree = "<group>"; };
-		A96E10341ACA99B000EC9407 /* Object_IntInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object_IntInt.h; sourceTree = "<group>"; };
+		A96E10331ACA99B000EC9407 /* Object__IntInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object__IntInt.cpp; sourceTree = "<group>"; };
+		A96E10341ACA99B000EC9407 /* Object__IntInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object__IntInt.h; sourceTree = "<group>"; };
 		A96E10361ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue__IntIntMax.cpp; sourceTree = "<group>"; };
 		A96E10371ACA9C4000EC9407 /* PriorityQueue__IntIntMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue__IntIntMax.h; sourceTree = "<group>"; };
 		A9C621631ABCFE25005962DC /* 210-5.5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "210-5.5"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +71,8 @@
 			children = (
 				A9C621711ABCFEA3005962DC /* Object.h */,
 				A9C621701ABCFEA3005962DC /* Object.cpp */,
-				A96E10341ACA99B000EC9407 /* Object_IntInt.h */,
-				A96E10331ACA99B000EC9407 /* Object_IntInt.cpp */,
+				A96E10341ACA99B000EC9407 /* Object__IntInt.h */,
+				A96E10331ACA99B000EC9407 /* Object__IntInt.cpp */,
 			);
 			name = Object;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 			files = (
 				A90297691ABD403600B50CD7 /* main.cpp in Sources */,
 				A96E10381ACA9C4000EC9407 /* PriorityQueue__IntIntMax.cpp in Sources */,
-				A96E10351ACA99B000EC9407 /* Object_IntInt.cpp in Sources */,
+				A96E10351ACA99B000EC9407 /* Object__IntInt.cpp in Sources */,
 				A902976B1ABD405000B50CD7 /* Object.cpp in Sources */,
 				A9CE6F1A1ABE0865006CF545 /* ObjectMaxCompare.cpp in Sources */,
 				A9FB02641ABE1A1500165FC4 /* PriorityQueue.cpp in Sources */,

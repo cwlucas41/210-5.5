@@ -7,7 +7,7 @@
 //
 
 #include "PriorityQueue__IntIntMax.h"
-#include "Object_IntInt.h"
+#include "Object__IntInt.h"
 
 
 PriorityQueue__IntIntMax::PriorityQueue__IntIntMax(Object__IntInt* h, int num, int max) : pq(PriorityQueue<int, int, ObjectMaxCompare<Object__IntInt>, Object__IntInt>(h, num, max)){}

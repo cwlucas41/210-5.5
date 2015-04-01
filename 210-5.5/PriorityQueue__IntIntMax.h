@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "PriorityQueue.cpp"
-#include "Object_IntInt.h"
+#include "Object__IntInt.h"
 #include "ObjectMaxCompare.cpp"
 
 class PriorityQueue__IntIntMax {
